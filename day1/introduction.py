@@ -36,4 +36,15 @@ while(guess <= number_Of_guess):
     guess += 1      
 else:
     print("YOU FAILED!!!!")
-        
+
+
+# Declare a list [1, 4, 9, 16, 25]or tuple (1, 4, 9, 16, 25), 
+# and using the for-loop print out all values that are even.
+    
+mylist =  [1, 4, 9, 16, 25]
+
+for x in mylist:
+    print(x)
+
+thistuple = ("apple", "banana", "cherry")
+print(thistuple)
