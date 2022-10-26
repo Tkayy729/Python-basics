@@ -1,3 +1,5 @@
+import random
+
 world = 'Hello World'
 age = 23
 name = "Emmanuel Koduah Tweneboah"
@@ -15,3 +17,23 @@ print(f"I am {age} years old")
 print(f"My name is {name}")
 print(f"My name is {name} and I am {age} years old")
 
+
+
+random.random()              # selects a value between 0.0 and 1.0
+random.randint(100,200)      # integers between 100 and 200
+random.randrange(100,200,2)  # even numbers between 100 and 200
+
+
+right_guess = random.randint(1,10)
+print(right_guess)
+number_Of_guess = 3
+guess = 1
+while(guess <= number_Of_guess):
+    guess_input = int(input('Guess a number from 1 to 10: '))
+    if guess_input == right_guess:
+        print(f"{guess_input} is the right number. You won")
+        break;  
+    guess += 1      
+else:
+    print("YOU FAILED!!!!")
+        
